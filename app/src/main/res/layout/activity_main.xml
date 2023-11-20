@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/amirMasdi"
+        android:layout_width="663dp"
+        android:layout_height="1710dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365"
+        app:srcCompat="@drawable/ezgif_com_webp_to_jpg__1_" />
+
+    <ImageView
+        android:id="@+id/blackBackground"
+        android:layout_width="430dp"
+        android:layout_height="933dp"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent"
+        tools:layout_editor_absoluteX="-24dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <ImageView
+        android:id="@+id/recShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackBackground"
+        app:layout_constraintVertical_bias="0.813"
+        app:srcCompat="@drawable/rec_shape_removebg_preview"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/HOD"
+        android:layout_width="231dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="420dp"
+        android:text="Head of Developer Team"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#F8F5F5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/jobScope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/blackBackground"
+        app:layout_constraintTop_toTopOf="@+id/recShape"
+        app:layout_constraintVertical_bias="0.878" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="231dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="420dp"
+        android:layout_marginBottom="-20dp"
+        android:text="Amir Masdo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#F8F5F5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/jobScope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toEndOf="@+id/blackBackground"
+        app:layout_constraintTop_toTopOf="@+id/recShape"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/jobScope"
+        android:layout_width="257dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="470dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="610dp"
+        android:text="As Tiktok's app developer, we crafted the platform with a primary goal of delivering an enjoyable and entertaining experience."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#F8F5F5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/amirMasdi"
+        app:layout_constraintEnd_toStartOf="@+id/blackBackground"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/shareIcon"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="30dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/blackBackground"
+        app:srcCompat="?attr/actionModeShareDrawable"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/scrollIcon"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="8dp"
+        android:tint="#FBFBFB"
+        app:layout_constraintBottom_toTopOf="@+id/scrollText"
+        app:layout_constraintEnd_toEndOf="@+id/recShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recShape"
+        app:layout_constraintTop_toBottomOf="@+id/jobScope"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/arrow_trans" />
+
+    <TextView
+        android:id="@+id/scrollText"
+        android:layout_width="231dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="85dp"
+        android:text="Scroll down to know more our team"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#F8F5F5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/blackBackground" />
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:tint="#FBFBFB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/kisspng_computer_icons_button_5ae031e3347159_1463805315246422752148"
+        tools:layout_editor_absoluteY="7dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
